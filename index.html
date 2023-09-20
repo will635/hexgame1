@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <title>Hexaguess</title>
+        <!--Meta Tags-->
+        <meta name="keywords" content="hex code game, hex, colour, game">
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#444444">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Links-->
+        <link rel="shortcut Icon" type="image/x-icon" href="icons/icon-512x512.png">
+        <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+        <!--Link external files JS, CSS, Manifest-->
+        <link rel="stylesheet" href="style.css">
+        <script  type="text/javascript" src="script.js"></script>
+        <link rel="manifest" href="manifest.json">  
+    
+    </head>
+    <body>
+        <h1>What is the colour code for this colour?</h1>
+
+        <center><input id="switchGM" type="button" value="Switch to guess colour based on code" onclick="switchGameMode()"></center>
+
+        <main>
+            <div id="colourSample"></div>
+
+            <div id = "scoreBoard" class="answer">Score: <span id="score"></span></div>
+            
+            <div id="a" class="answer">sdf</div>
+            <div id="b" class="answer">sdf</div>
+            <div id="c" class="answer">sdf</div>
+            <div id="d" class="answer">sdf</div>
+            <div id="e" class="answer">sdf</div>
+            <div id="f" class="answer">sdf</div>
+            <div id="g" class="answer">sdf</div>
+            <div id="h" class="answer">sdf</div>
+            <div id="new" class="answer" onclick="loadNewGame()">New Game</div>
+            
+            <div id="lightbox">
+                <div id="message">
+                        <h2> Select a game difficulty</h2>
+                        <center><h4 onclick = "selectModeEasy()">Easy</h4></center>
+                        <center><h4 onclick = "selectModeMedium()">Medium</h4></center>
+                        <center><h4 onclick = "selectModeHard()">Hard</h4></center>
+                </div>
+            </div>
+              
+        </main>
+
+
+
+
+
+
+    </body>
+</html>
